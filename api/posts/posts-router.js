@@ -6,7 +6,7 @@ const Post = require("./posts-model");
 
 // router.get("/", async (req, res) => {
 //   try {
-//     const posts = Post.find();
+//     const posts = await Post.find();
 //     res.status(200).json(posts);
 //   } catch (err) {
 //     res
@@ -30,7 +30,7 @@ router.get("/", (req, res) => {
 //   const { id } = req.params;
 
 //   try {
-//     const post = Post.findById(id);
+//     const post = await Post.findById(id);
 //     if (id) {
 //       res.status(200).json(post);
 //     } else {
